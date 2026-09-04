@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="c:\Users\abdel\OneDrive\Desktop\Gemini_Generated_Image_3rq9ue3rq9ue3rq9.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مسار الثانوية العامة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ===== Light Mode — Warm Café / Latte ===== */
+    --bg: #F5EEE2;
+    --bg-elev: #FBF6EC;
+    --bg-panel: #FFFCF6;
+    --bg-card: #FFFDF9;
+    --bg-card-2: #F1E4D0;
+    --border: #E6D6BD;
+    --border-soft: #EDE1CB;
+    --text-1: #3A2E20;
+    --text-2: #6E5B45;
+    --text-3: #A0896D;
+    --accent: #B4783F;
+    --accent-2: #8A9E7A;
+    --accent-3: #C9A15A;
+    --accent-4: #A6714F;
+    --accent-soft: #EBD3AE;
+    --accent-glow: rgba(180,120,63,.20);
+    --muted-done: #E4D7C2;
+    --warn: #C08542;
+    --good: #74905F;
+    --danger: #B0574C;
+    --radius: 16px;
+    --shadow: 0 10px 28px rgba(90,64,32,.12);
+    --blob-1: rgba(180,120,63,.10);
+    --blob-2: rgba(138,158,122,.10);
+    --blob-3: rgba(201,161,90,.10);
+    --particle: rgba(180,120,63,.35);
+    --glow-strength: 0;
+  }
+  html[data-theme="dark"]{
+    /* ===== Dark Mode — Neon / Cyberpunk / Disco ===== */
+    --bg: #060109;
+    --bg-elev: #0B0410;
+    --bg-panel: #0E0616;
+    --bg-card: #120A1C;
+    --bg-card-2: #1B0F29;
+    --border: #33194A;
+    --border-soft: #22102F;
+    --text-1: #F5EEFF;
+    --text-2: #C6AFE8;
+    --text-3: #8A72AD;
+    --accent: #FF2FA8;
+    --accent-2: #00F0FF;
+    --accent-3: #C6FF1E;
+    --accent-4: #B026FF;
+    --accent-soft: rgba(255,47,168,.22);
+    --accent-glow: rgba(255,47,168,.55);
+    --muted-done: #241333;
+    --warn: #FFC93C;
+    --good: #C6FF1E;
+    --danger: #FF3E6C;
+    --shadow: 0 10px 34px rgba(255,47,168,.15);
+    --blob-1: rgba(255,47,168,.20);
+    --blob-2: rgba(0,240,255,.16);
+    --blob-3: rgba(176,38,255,.18);
+    --particle: rgba(0,240,255,.65);
+    --glow-strength: 1;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text-1);
+    font-family:'IBM Plex Sans Arabic','Tajawal',sans-serif;
+    min-height:100vh;
+    padding-bottom:90px;
+    position:relative;
+    overflow-x:hidden;
+    transition:background .5s ease, color .5s ease;
+  }
+  h1,h2,h3,.display{font-family:'Tajawal',sans-serif;}
+  ::selection{background:var(--accent-soft);}
+  button{font-family:inherit;cursor:pointer;}
+  input,select,textarea{font-family:inherit;}
+
+  /* ===== Animated living background ===== */
+  .bg-fx{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;}
+  .bg-fx .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.9;}
+  .bg-fx .b1{width:520px;height:520px;background:var(--blob-1);top:-10%;right:-8%;animation:float1 22s ease-in-out infinite;}
+  .bg-fx .b2{width:460px;height:460px;background:var(--blob-2);bottom:-12%;left:-6%;animation:float2 26s ease-in-out infinite;}
+  .bg-fx .b3{width:380px;height:380px;background:var(--blob-3);top:40%;left:45%;animation:float3 30s ease-in-out infinite;}
+  @keyframes float1{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-40px,60px) scale(1.15);}}
+  @keyframes float2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(50px,-40px) scale(1.1);}}
+  @keyframes float3{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-30px,-50px) scale(.9);}}
+  .particle{position:fixed;bottom:-10px;border-radius:50%;background:var(--particle);z-index:-1;pointer-events:none;
+    box-shadow:0 0 calc(4px + 8px*var(--glow-strength)) var(--particle);opacity:.7;animation:drift linear infinite;}
+  @keyframes drift{from{transform:translateY(0) translateX(0);opacity:0;}10%{opacity:.75;}90%{opacity:.5;}to{transform:translateY(-110vh) translateX(var(--dx,20px));opacity:0;}}
+
+  @media (prefers-reduced-motion: reduce){
+    .bg-fx .blob, .particle{animation:none !important;}
+  }
+
+  /* ===== Header ===== */
+  header.top{
+    position:sticky;top:0;z-index:30;
+    background:linear-gradient(180deg, color-mix(in srgb, var(--bg) 96%, transparent), color-mix(in srgb, var(--bg) 88%, transparent));
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border-soft);
+    padding:14px 20px 12px;
+    transition:background .5s ease, border-color .5s ease;
+  }
+  .top-row{
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:1180px;margin:0 auto;flex-wrap:wrap;gap:14px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 calc(8px + 10px*var(--glow-strength)) var(--accent-glow);
+    animation:pulseDot 2.4s ease-in-out infinite;}
+  @keyframes pulseDot{0%,100%{opacity:1;}50%{opacity:.55;}}
+  .brand h1{font-size:19px;font-weight:800;margin:0;letter-spacing:.2px;color:var(--text-1);}
+  .brand span{color:var(--text-3);font-size:12px;display:block;margin-top:1px;}
+
+  .theme-toggle{
+    background:var(--bg-card);border:1px solid var(--border);color:var(--text-1);
+    width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-size:16px;transition:all .25s ease;
+  }
+  .theme-toggle:hover{border-color:var(--accent);box-shadow:0 0 calc(6px + 10px*var(--glow-strength)) var(--accent-glow);}
+
+  .head-right{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+
+  .ring-wrap{display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);
+    border-radius:16px;padding:6px 14px 6px 8px;}
+  .ring-wrap svg{display:block;}
+  .ring-track{fill:none;stroke:var(--border-soft);stroke-width:6;}
+  .ring-fill{fill:none;stroke:url(#ringGrad);stroke-width:6;stroke-linecap:round;
+    transition:stroke-dashoffset 1s ease;filter:drop-shadow(0 0 calc(2px + 4px*var(--glow-strength)) var(--accent-glow));}
+  .ring-label{display:flex;flex-direction:column;}
+  .ring-label b{font-size:16px;font-family:'Tajawal',sans-serif;}
+  .ring-label span{font-size:10.5px;color:var(--text-3);}
+
+  .counters{display:flex;gap:10px;flex-wrap:wrap;}
+  .counter{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:14px;padding:8px 14px;min-width:132px;text-align:center;
+    transition:border-color .3s;
+  }
+  .counter .label{font-size:11px;color:var(--text-3);margin-bottom:3px;}
+  .counter .value{font-size:18px;font-weight:800;color:var(--text-1);font-family:'Tajawal',sans-serif;}
+  .counter.remain .value{color:var(--warn);}
+  .counter.elapsed .value{color:var(--good);}
+
+  /* ===== Nav tabs ===== */
+  .tabs{max-width:1180px;margin:14px auto 0;padding:0 20px;display:flex;gap:8px;}
+  .tab-btn{
+    background:transparent;border:1px solid var(--border);color:var(--text-2);
+    padding:9px 18px;border-radius:12px;font-size:13.5px;font-weight:700;transition:all .25s;
+  }
+  .tab-btn.active{background:var(--accent);border-color:var(--accent);color:var(--bg);
+    box-shadow:0 0 calc(6px + 14px*var(--glow-strength)) var(--accent-glow);}
+  .tab-btn:not(.active):hover{border-color:var(--accent);color:var(--text-1);}
+
+  main{max-width:1180px;margin:0 auto;padding:20px;}
+  .view{display:none;animation:fadeUp .45s ease;}
+  .view.active{display:block;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+  /* ===== HOME: stacked day lines ===== */
+  .home-hero{margin-bottom:22px;}
+  .home-hero h2{font-size:22px;margin:0 0 4px;font-family:'Tajawal',sans-serif;font-weight:800;}
+  .home-hero p{margin:0;color:var(--text-3);font-size:13px;}
+
+  .day-lines{display:flex;flex-direction:column;}
+  .day-line{
+    position:relative;display:flex;align-items:center;justify-content:space-between;
+    padding:20px 6px;border-bottom:1px solid var(--border-soft);
+    background:transparent;border-left:none;border-right:none;border-top:none;
+    color:var(--text-1);text-align:right;width:100%;transition:all .3s ease;overflow:hidden;
+  }
+  .day-line:first-child{border-top:1px solid var(--border-soft);}
+  .day-line::before{
+    content:"";position:absolute;inset:0;left:auto;width:0%;
+    background:linear-gradient(90deg, transparent, var(--accent-soft));
+    transition:width .35s ease;z-index:0;
+  }
+  .day-line:hover::before, .day-line.today::before{width:100%;}
+  .day-line:hover{padding-inline-start:16px;}
+  .dl-name{position:relative;z-index:1;font-size:21px;font-weight:800;font-family:'Tajawal',sans-serif;
+    display:flex;align-items:center;gap:10px;}
+  .dl-name .idx{font-size:12px;color:var(--text-3);font-weight:600;}
+  .dl-badge{
+    position:relative;z-index:1;font-size:10.5px;font-weight:700;color:var(--bg);background:var(--accent);
+    padding:2px 9px;border-radius:8px;box-shadow:0 0 calc(4px + 10px*var(--glow-strength)) var(--accent-glow);
+  }
+  .dl-meta{position:relative;z-index:1;display:flex;align-items:center;gap:14px;color:var(--text-3);font-size:12.5px;}
+  .dl-arrow{font-size:18px;color:var(--text-3);transition:transform .3s;}
+  .day-line:hover .dl-arrow{transform:translateX(-6px);color:var(--accent);}
+
+  /* ===== DAY VIEW ===== */
+  .day-view-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .back-btn{
+    background:var(--bg-card);border:1px solid var(--border);color:var(--text-1);
+    width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;
+    transition:all .2s;
+  }
+  .back-btn:hover{border-color:var(--accent);color:var(--accent);}
+  .day-view-title{font-size:20px;font-weight:800;font-family:'Tajawal',sans-serif;margin:0;}
+  .day-view-sub{font-size:12px;color:var(--text-3);margin-top:2px;}
+
+  .layout{display:grid;grid-template-columns:1fr 300px;gap:18px;}
+  @media (max-width:820px){.layout{grid-template-columns:1fr;}}
+
+  .panel{
+    background:var(--bg-panel);border:1px solid var(--border-soft);
+    border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);
+  }
+  .panel h2{font-size:14px;margin:0 0 12px;color:var(--text-2);font-weight:700;display:flex;align-items:center;justify-content:space-between;}
+
+  .day-notes textarea{
+    width:100%;min-height:160px;resize:vertical;
+    background:var(--bg-card);border:1px solid var(--border);
+    color:var(--text-1);border-radius:10px;padding:10px 12px;
+    font-size:13.5px;line-height:1.7;outline:none;
+  }
+  .day-notes textarea:focus{border-color:var(--accent);}
+  .save-hint{font-size:11px;color:var(--text-3);margin-top:8px;display:flex;align-items:center;gap:5px;}
+  .save-hint .pulse{width:6px;height:6px;border-radius:50%;background:var(--good);opacity:0;transition:opacity .3s;}
+  .save-hint .pulse.show{opacity:1;}
+
+  /* ===== Literal timeline rail ===== */
+  .rail-zone{display:flex;gap:14px;}
+  .rail-col{position:relative;width:26px;flex-shrink:0;cursor:crosshair;}
+  .rail-line{
+    position:absolute;top:0;bottom:0;right:12px;width:3px;border-radius:3px;
+    background:linear-gradient(180deg, var(--muted-done) var(--now-pct,0%), var(--accent) var(--now-pct,0%), var(--accent-2) 100%);
+    transition:background .8s ease;
+  }
+  html[data-theme="dark"] .rail-line{box-shadow:0 0 calc(6px + 10px*var(--glow-strength)) var(--accent-glow);}
+  .rail-now-dot{
+    position:absolute;right:6px;width:15px;height:15px;border-radius:50%;
+    background:var(--warn);box-shadow:0 0 0 3px var(--bg), 0 0 calc(6px + 14px*var(--glow-strength)) var(--warn);
+    transform:translateY(-50%);animation:emberPulse 1.8s ease-in-out infinite;z-index:2;
+  }
+  @keyframes emberPulse{0%,100%{transform:translateY(-50%) scale(1);}50%{transform:translateY(-50%) scale(1.35);}}
+  .rail-hint{position:absolute;right:26px;font-size:10px;color:var(--text-3);white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .2s;}
+  .rail-col:hover .rail-hint{opacity:1;}
+  .ghost-node{
+    position:absolute;right:2px;width:19px;height:19px;border-radius:50%;
+    background:var(--bg-card);border:2px dashed var(--accent);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;
+    transform:translateY(-50%);z-index:3;animation:ghostPop .25s ease;cursor:pointer;
+  }
+  @keyframes ghostPop{from{transform:translateY(-50%) scale(.3);opacity:0;}to{transform:translateY(-50%) scale(1);opacity:1;}}
+
+  .timeline{position:relative;flex:1;min-width:0;}
+  .block{
+    position:relative;margin-bottom:10px;border-radius:12px;
+    background:var(--bg-card);border:1px solid var(--border);
+    overflow:hidden;transition:opacity .3s ease, transform .2s ease, border-color .2s;
+  }
+  .block:hover{border-color:var(--accent);transform:translateX(-2px);}
+  .block-fill{
+    position:absolute;inset:0;background:rgba(0,0,0,.30);
+    width:var(--progress,0%);transition:width 20s linear;z-index:0;
+    border-inline-end:1px solid rgba(255,255,255,.05);
+  }
+  html[data-theme="dark"] .block-fill{background:rgba(0,0,0,.55);}
+  .block.done{opacity:.5;filter:saturate(.55);}
+  .block.done .cat-bar{filter:grayscale(.5);}
+  .block-inner{position:relative;z-index:1;display:flex;align-items:center;gap:10px;padding:10px 12px;}
+  .cat-bar{width:4px;align-self:stretch;border-radius:3px;background:var(--cat-color, var(--accent));min-height:34px;
+    box-shadow:0 0 calc(0px + 8px*var(--glow-strength)) var(--cat-color, var(--accent-glow));}
+  .block-main{flex:1;min-width:0;cursor:pointer;}
+  .block-time{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--text-3);font-family:'Tajawal',sans-serif;}
+  .block-time input[type=time]{
+    background:transparent;border:none;color:var(--text-3);font-size:12px;
+    font-family:'Tajawal',sans-serif;width:64px;padding:2px;border-radius:6px;
+  }
+  .block-time input[type=time]:hover, .block-time input[type=time]:focus{background:var(--bg-card-2);color:var(--text-1);outline:none;}
+  .block-title{font-size:14.5px;font-weight:700;color:var(--text-1);margin-top:2px;}
+  .block-note-flag{font-size:11px;color:var(--text-3);margin-top:2px;}
+  .block-actions{display:flex;gap:6px;align-items:center;}
+  .icon-btn{
+    background:var(--bg-card-2);border:1px solid var(--border);color:var(--text-2);
+    width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+    font-size:13px;transition:all .2s;
+  }
+  .icon-btn:hover{color:var(--text-1);border-color:var(--accent);}
+  .icon-btn.del:hover{color:#fff;background:var(--danger);border-color:var(--danger);}
+
+  select.activity-select{
+    background:var(--bg-card-2);border:1px solid var(--border);color:var(--text-1);
+    border-radius:8px;padding:5px 8px;font-size:12.5px;max-width:150px;
+  }
+
+  .add-row{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;}
+  .btn{
+    background:var(--bg-card);border:1px solid var(--border);color:var(--text-1);
+    padding:9px 16px;border-radius:10px;font-size:13px;font-weight:700;transition:all .2s;
+  }
+  .btn:hover{border-color:var(--accent);background:var(--bg-card-2);}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg);}
+  .btn.primary:hover{filter:brightness(1.08);box-shadow:0 0 calc(4px + 12px*var(--glow-strength)) var(--accent-glow);}
+  .empty-day{color:var(--text-3);font-size:13px;text-align:center;padding:30px 10px;}
+
+  /* ===== Bottom detail panel ===== */
+  .bottom-panel{
+    position:fixed;left:0;right:0;bottom:-100%;z-index:50;
+    background:var(--bg-elev);border-top:1px solid var(--border);
+    box-shadow:0 -10px 30px rgba(0,0,0,.25);
+    padding:18px 20px 20px;transition:bottom .35s cubic-bezier(.4,0,.2,1);
+    max-height:70vh;overflow-y:auto;
+  }
+  .bottom-panel.open{bottom:0;}
+  .bp-inner{max-width:800px;margin:0 auto;}
+  .bp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  .bp-head .cat-dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-inline-end:8px;background:var(--cat-color, var(--accent));}
+  .bp-head h3{margin:0;font-size:16px;font-weight:800;}
+  .bp-head .bp-time{color:var(--text-3);font-size:12.5px;margin-top:2px;}
+  .bp-close{
+    background:none;border:none;color:var(--text-2);font-size:20px;line-height:1;
+    width:32px;height:32px;border-radius:8px;
+  }
+  .bp-close:hover{background:var(--bg-card);color:var(--text-1);}
+  .bp-field{margin-bottom:12px;}
+  .bp-field label{display:block;font-size:12px;color:var(--text-3);margin-bottom:6px;}
+  .bp-field input[type=text], .bp-field input[type=number], .bp-field input[type=date], .bp-field select{
+    width:100%;background:var(--bg-card);border:1px solid var(--border);color:var(--text-1);
+    border-radius:9px;padding:9px 12px;font-size:13.5px;outline:none;
+  }
+  .bp-field textarea{
+    width:100%;min-height:110px;background:var(--bg-card);border:1px solid var(--border);
+    color:var(--text-1);border-radius:9px;padding:10px 12px;font-size:13.5px;line-height:1.7;
+    resize:vertical;outline:none;
+  }
+  .bp-field input:focus, .bp-field textarea:focus{border-color:var(--accent);}
+  .overlay{
+    position:fixed;inset:0;background:rgba(3,2,6,.55);z-index:45;
+    opacity:0;pointer-events:none;transition:opacity .3s;
+  }
+  .overlay.show{opacity:1;pointer-events:auto;}
+
+  /* ===== Toast ===== */
+  .toast-wrap{position:fixed;bottom:20px;right:20px;z-index:80;display:flex;flex-direction:column;gap:8px;}
+  .toast{
+    background:var(--bg-elev);border:1px solid var(--accent-soft);border-inline-start:4px solid var(--warn);
+    color:var(--text-1);padding:12px 16px;border-radius:10px;font-size:13.5px;
+    box-shadow:var(--shadow);min-width:230px;max-width:320px;
+    animation:slideIn .35s ease;
+  }
+  @keyframes slideIn{from{transform:translateY(12px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+  .toast b{display:block;margin-bottom:3px;color:var(--warn);font-size:12.5px;}
+
+  /* ===== Syllabus view ("خلصت إيه؟") ===== */
+  .subject-card{
+    background:var(--bg-panel);border:1px solid var(--border-soft);border-radius:var(--radius);
+    margin-bottom:16px;overflow:hidden;box-shadow:var(--shadow);
+  }
+  .subject-head{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:16px 18px;cursor:pointer;user-select:none;
+  }
+  .subject-head-l{display:flex;align-items:center;gap:12px;}
+  .subject-icon{font-size:24px;}
+  .subject-name{font-size:16.5px;font-weight:800;font-family:'Tajawal',sans-serif;}
+  .subject-sub{font-size:11.5px;color:var(--text-3);margin-top:2px;}
+  .subject-progress-wrap{display:flex;align-items:center;gap:10px;}
+  .subject-progress-bar{width:110px;height:7px;border-radius:5px;background:var(--border-soft);overflow:hidden;}
+  .subject-progress-fill{height:100%;border-radius:5px;transition:width .5s ease;}
+  .subject-pct{font-size:12.5px;font-weight:800;color:var(--text-2);min-width:34px;text-align:left;}
+  .chev{font-size:13px;color:var(--text-3);transition:transform .3s;}
+  .subject-card.open .chev{transform:rotate(180deg);}
+  .chapters-wrap{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+  .subject-card.open .chapters-wrap{max-height:4000px;}
+  .chapter{border-top:1px solid var(--border-soft);padding:14px 18px;}
+  .chapter-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;}
+  .chapter-name{font-size:13.5px;font-weight:700;color:var(--text-1);display:flex;align-items:center;gap:8px;}
+  .chapter-name .trophy{font-size:14px;opacity:0;transition:opacity .3s;}
+  .chapter.complete .chapter-name .trophy{opacity:1;}
+  .chapter.complete{background:linear-gradient(90deg, var(--accent-soft), transparent);border-radius:10px;}
+  .chapter-mini-bar{width:70px;height:5px;border-radius:4px;background:var(--border-soft);overflow:hidden;}
+  .chapter-mini-fill{height:100%;background:var(--accent);border-radius:4px;transition:width .4s;}
+  .lesson-list{display:flex;flex-direction:column;gap:6px;}
+  .lesson-item, .todo-item{display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:8px;transition:background .2s;}
+  .lesson-item:hover, .todo-item:hover{background:var(--bg-card);}
+  .lesson-item input[type=checkbox], .todo-item input[type=checkbox]{
+    appearance:none;width:19px;height:19px;border-radius:6px;border:2px solid var(--border);
+    background:var(--bg-card);flex-shrink:0;cursor:pointer;position:relative;transition:all .2s;
+  }
+  .lesson-item input[type=checkbox]:checked, .todo-item input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent);
+    box-shadow:0 0 calc(2px + 8px*var(--glow-strength)) var(--accent-glow);}
+  .lesson-item input[type=checkbox]:checked::after, .todo-item input[type=checkbox]:checked::after{
+    content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    color:var(--bg);font-size:12px;font-weight:900;
+  }
+  .lesson-item label, .todo-item label{font-size:13px;color:var(--text-2);cursor:pointer;flex:1;}
+  .lesson-item input[type=checkbox]:checked ~ label, .todo-item input[type=checkbox]:checked ~ label{color:var(--text-3);text-decoration:line-through;}
+
+  /* ===== Achievement popup ===== */
+  .ach-overlay{position:fixed;inset:0;background:rgba(3,2,6,.65);z-index:95;display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;transition:opacity .3s;padding:20px;}
+  .ach-overlay.show{opacity:1;pointer-events:auto;}
+  .ach-card{
+    background:linear-gradient(160deg, var(--bg-panel), var(--bg-card-2));
+    border:1px solid var(--accent);border-radius:20px;padding:34px 30px;max-width:380px;width:100%;
+    text-align:center;position:relative;overflow:hidden;transform:scale(.7);transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+    box-shadow:0 0 0 rgba(0,0,0,0);
+  }
+  .ach-overlay.show .ach-card{transform:scale(1);
+    box-shadow:0 20px 60px rgba(0,0,0,.3), 0 0 calc(20px + 40px*var(--glow-strength)) var(--accent-glow);}
+  .ach-card::before{
+    content:"";position:absolute;inset:-40%;
+    background:conic-gradient(from 0deg, var(--accent), var(--accent-4), var(--accent-2), var(--accent-3), var(--accent));
+    opacity:calc(.06 + .1*var(--glow-strength));animation:spin 6s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .ach-inner{position:relative;z-index:1;}
+  .ach-emoji{font-size:48px;margin-bottom:10px;animation:bounceIn .6s ease;}
+  @keyframes bounceIn{0%{transform:scale(0);}60%{transform:scale(1.2);}100%{transform:scale(1);}}
+  .ach-title{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.5px;margin-bottom:6px;}
+  .ach-chapter{font-size:18px;font-weight:800;margin-bottom:12px;font-family:'Tajawal',sans-serif;}
+  .ach-quote{font-size:14px;color:var(--text-2);line-height:1.8;margin-bottom:20px;}
+  .ach-close{background:var(--accent);border:none;color:var(--bg);padding:10px 26px;border-radius:12px;font-weight:800;font-size:13.5px;}
+
+  /* ===== Expenses view ("المصروفات") ===== */
+  .exp-cats{display:flex;flex-direction:column;gap:12px;}
+  .exp-cat-row{display:flex;align-items:center;gap:10px;}
+  .exp-cat-icon{font-size:17px;width:24px;text-align:center;flex-shrink:0;}
+  .exp-cat-name{font-size:12.5px;font-weight:700;color:var(--text-2);flex:0 0 120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .exp-cat-bar{flex:1;height:8px;border-radius:5px;background:var(--border-soft);overflow:hidden;min-width:40px;}
+  .exp-cat-fill{height:100%;border-radius:5px;transition:width .5s ease;}
+  .exp-cat-amount{font-size:12px;color:var(--text-1);font-weight:800;min-width:76px;text-align:left;}
+
+  .exp-list{display:flex;flex-direction:column;}
+  .exp-item{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:13px 4px;border-bottom:1px solid var(--border-soft);}
+  .exp-item:first-child{border-top:1px solid var(--border-soft);}
+  .exp-item-l{display:flex;align-items:center;gap:10px;min-width:0;}
+  .exp-item-icon{font-size:19px;width:28px;text-align:center;flex-shrink:0;}
+  .exp-item-info{min-width:0;}
+  .exp-item-cat{font-size:13.5px;font-weight:700;color:var(--text-1);}
+  .exp-item-meta{font-size:11.5px;color:var(--text-3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .exp-item-amount{font-size:15px;font-weight:800;color:var(--accent);white-space:nowrap;}
+  .exp-item-actions{display:flex;gap:6px;flex-shrink:0;}
+  .exp-empty{color:var(--text-3);font-size:13px;text-align:center;padding:24px 10px;}
+
+  /* ===== Todo view ("المهام") ===== */
+  .todo-ring-wrap{position:relative;width:132px;height:132px;margin:0 auto;}
+  .todo-ring-wrap svg{width:100%;height:100%;display:block;}
+  .todo-ring-track{fill:none;stroke:var(--border-soft);}
+  .todo-ring-fill{fill:none;stroke:url(#todoRingGrad);stroke-linecap:round;
+    transition:stroke-dashoffset .8s ease;filter:drop-shadow(0 0 calc(2px + 6px*var(--glow-strength)) var(--accent-glow));}
+  .todo-ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .todo-ring-label b{font-size:23px;font-family:'Tajawal',sans-serif;color:var(--text-1);}
+  .todo-ring-label span{font-size:10.5px;color:var(--text-3);margin-top:2px;}
+  .todo-stats{font-size:12.5px;color:var(--text-3);text-align:center;margin-top:14px;}
+
+  .todo-list{display:flex;flex-direction:column;gap:2px;}
+
+  ::-webkit-scrollbar{width:8px;height:8px;}
+  ::-webkit-scrollbar-thumb{background:var(--border);border-radius:8px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;animation:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-fx" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div id="particles" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="top-row">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>مسار الثانوية العامة</h1>
+        <span>جدول المذاكرة والتركيز اليومي</span>
+      </div>
+    </div>
+    <div class="head-right">
+      <div class="counters">
+        <div class="counter elapsed">
+          <div class="label">مرّ من الرحلة</div>
+          <div class="value" id="elapsedVal">—</div>
+        </div>
+        <div class="counter remain">
+          <div class="label">متبقٍ حتى الامتحان</div>
+          <div class="value" id="remainVal">—</div>
+        </div>
+      </div>
+      <div class="ring-wrap">
+        <svg width="46" height="46" viewBox="0 0 46 46">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="var(--accent)"/>
+              <stop offset="100%" stop-color="var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+          <circle class="ring-track" cx="23" cy="23" r="19"></circle>
+          <circle class="ring-fill" id="ringFill" cx="23" cy="23" r="19" stroke-dasharray="119.4" stroke-dashoffset="119.4" transform="rotate(-90 23 23)"></circle>
+        </svg>
+        <div class="ring-label"><b id="ringPct">0%</b><span>من الرحلة</span></div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="تبديل الثيم">🌙</button>
+    </div>
+  </div>
+  <nav class="tabs">
+    <button class="tab-btn" id="tabHome" data-tab="home">الرئيسية</button>
+    <button class="tab-btn" id="tabSyllabus" data-tab="syllabus">خلصت إيه؟ 📚</button>
+    <button class="tab-btn" id="tabExpenses" data-tab="expenses">المصروفات 💰</button>
+    <button class="tab-btn" id="tabTodo" data-tab="todo">المهام ✅</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== HOME VIEW ===== -->
+  <section class="view" id="viewHome">
+    <div class="home-hero">
+      <h2>اختَر يومك</h2>
+      <p>اضغط على أي يوم للدخول إلى خطه الزمني التفاعلي</p>
+    </div>
+    <div class="day-lines" id="dayLines"></div>
+  </section>
+
+  <!-- ===== DAY VIEW ===== -->
+  <section class="view" id="viewDay">
+    <div class="day-view-head">
+      <button class="back-btn" id="backHomeBtn">→</button>
+      <div>
+        <h2 class="day-view-title" id="dayViewTitle">اليوم</h2>
+        <div class="day-view-sub" id="dayViewSub"></div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="panel">
+        <h2>الخط الزمني <span style="font-size:11px;color:var(--text-3);font-weight:500;">اضغط على الخط لإضافة مهمة</span></h2>
+        <div class="rail-zone">
+          <div class="rail-col" id="railCol">
+            <div class="rail-line" id="railLine"></div>
+            <div class="rail-now-dot" id="railNowDot" style="display:none;"></div>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+        <div class="add-row">
+          <select id="quickPreset" class="activity-select" style="max-width:180px;">
+            <option value="">اختر نشاطًا لإضافته سريعًا...</option>
+          </select>
+          <button class="btn primary" id="addBlockBtn">+ إضافة خانة زمنية</button>
+        </div>
+      </div>
+
+      <div class="panel day-notes">
+        <h2>ملاحظات اليوم</h2>
+        <textarea id="dayNotesArea" placeholder="اكتب هنا أي ملاحظات عامة عن يومك... (أهداف، تذكيرات، مزاجك أثناء المذاكرة...)"></textarea>
+        <div class="save-hint"><span class="pulse" id="savePulse"></span> يُحفظ تلقائيًا على جهازك</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SYLLABUS VIEW ===== -->
+  <section class="view" id="viewSyllabus">
+    <div class="home-hero">
+      <h2>خلصت إيه؟ 📚</h2>
+      <p>حدّد كل درس خلصته، ولما تخلّص باب كامل هتاخد مفاجأة تحفيزية</p>
+    </div>
+    <div id="subjectsWrap"></div>
+  </section>
+
+  <!-- ===== EXPENSES VIEW ===== -->
+  <section class="view" id="viewExpenses">
+    <div class="home-hero">
+      <h2>المصروفات 💰</h2>
+      <p>سجّل كل جنيه بيتصرف على رحلتك في الثانوية العامة، وشوف بيروح فين</p>
+    </div>
+
+    <div class="counters" id="expSummary" style="margin-bottom:20px;">
+      <div class="counter">
+        <div class="label">إجمالي المصروف</div>
+        <div class="value" id="expTotalVal">٠ جنيه</div>
+      </div>
+      <div class="counter">
+        <div class="label">عدد العمليات</div>
+        <div class="value" id="expCountVal">٠</div>
+      </div>
+      <div class="counter">
+        <div class="label">أكتر بند صرفت عليه</div>
+        <div class="value" id="expTopVal">—</div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="panel">
+        <h2 id="expFormTitle">سجّل مصروف جديد</h2>
+        <div class="bp-field">
+          <label>المبلغ (جنيه)</label>
+          <input type="number" id="expAmount" min="0" step="1" placeholder="مثال: 150">
+        </div>
+        <div class="bp-field">
+          <label>بند الصرف</label>
+          <select id="expCategory"></select>
+        </div>
+        <div class="bp-field">
+          <label>التاريخ</label>
+          <input type="date" id="expDate">
+        </div>
+        <div class="bp-field">
+          <label>ملاحظة (اختياري)</label>
+          <input type="text" id="expNote" placeholder="مثال: كتاب الأضواء فيزياء">
+        </div>
+        <div class="add-row">
+          <button class="btn primary" id="expAddBtn">+ إضافة المصروف</button>
+          <button class="btn" id="expCancelEditBtn" style="display:none;">إلغاء التعديل</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>توزيع المصروفات حسب البند</h2>
+        <div class="exp-cats" id="expCatsWrap"></div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:18px;">
+      <h2>كل العمليات <span style="font-size:11px;color:var(--text-3);font-weight:500;" id="expListCount"></span></h2>
+      <div class="exp-list" id="expListWrap"></div>
+    </div>
+  </section>
+
+  <!-- ===== TODO VIEW ===== -->
+  <section class="view" id="viewTodo">
+    <div class="home-hero">
+      <h2>المهام ✅</h2>
+      <p>دوّن كل حاجة لازم تعملها، وتابع نسبة إنجازك أول بأول</p>
+    </div>
+
+    <div class="layout" style="grid-template-columns:220px 1fr;">
+      <div class="panel" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <div class="todo-ring-wrap">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="todoRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent)"/>
+                <stop offset="100%" stop-color="var(--accent-2)"/>
+              </linearGradient>
+            </defs>
+            <circle class="todo-ring-track" cx="60" cy="60" r="50" stroke-width="10"></circle>
+            <circle class="todo-ring-fill" id="todoRingFill" cx="60" cy="60" r="50" stroke-width="10"
+              stroke-dasharray="314.16" stroke-dashoffset="314.16" transform="rotate(-90 60 60)"></circle>
+          </svg>
+          <div class="todo-ring-label"><b id="todoPct">0%</b><span>خلصت قد إيه</span></div>
+        </div>
+        <div class="todo-stats" id="todoStatsText">لسه مفيش مهام</div>
+      </div>
+
+      <div class="panel">
+        <h2>لستة المهام</h2>
+        <div class="add-row">
+          <input type="text" id="todoInput" placeholder="اكتب مهمة جديدة... (مثال: راجع باب الاتزان الكيميائي)"
+            style="flex:1;min-width:180px;background:var(--bg-card);border:1px solid var(--border);color:var(--text-1);border-radius:10px;padding:9px 12px;font-size:13.5px;">
+          <button class="btn primary" id="todoAddBtn">+ إضافة</button>
+        </div>
+        <div class="todo-list" id="todoListWrap" style="margin-top:14px;"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="overlay" id="overlay"></div>
+<div class="bottom-panel" id="bottomPanel">
+  <div class="bp-inner">
+    <div class="bp-head">
+      <div>
+        <h3><span class="cat-dot" id="bpDot"></span><span id="bpTitle">تفاصيل النشاط</span></h3>
+        <div class="bp-time" id="bpTime"></div>
+      </div>
+      <button class="bp-close" id="bpClose">✕</button>
+    </div>
+    <div class="bp-field">
+      <label>اسم النشاط</label>
+      <input type="text" id="bpActivityName">
+    </div>
+    <div class="bp-field">
+      <label>ملاحظات وتفاصيل خاصة بهذا النشاط</label>
+      <textarea id="bpNotes" placeholder="مثال: صفحة 45 إلى 60، ركّز على قانون نيوتن الثاني، حل أمثلة إضافية..."></textarea>
+    </div>
+    <button class="btn primary" id="bpSave">حفظ</button>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<div class="ach-overlay" id="achOverlay">
+  <div class="ach-card">
+    <div class="ach-inner">
+      <div class="ach-emoji" id="achEmoji">🏆</div>
+      <div class="ach-title">إنجاز جديد مفتوح!</div>
+      <div class="ach-chapter" id="achChapter"></div>
+      <div class="ach-quote" id="achQuote"></div>
+      <button class="ach-close" id="achClose">تمام، كمّل 🚀</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Constants (unchanged core logic) ---------------- */
+  const START_DATE = new Date(2026, 7, 8, 0, 0, 0);   // 8 August 2026
+  const END_DATE   = new Date(2027, 6, 21, 23, 59, 59); // 21 July 2027
+  const STORAGE_KEY = "studyPlanner_v1";
+  const THEME_KEY = "studyPlanner_theme_v1";
+  const SYLLABUS_KEY = "studyPlanner_syllabus_v1";
+  const EXPENSES_KEY = "studyPlanner_expenses_v1";
+  const TODOS_KEY = "studyPlanner_todos_v1";
+
+  const EXPENSE_CATS = [
+    {key:'كتب ومذكرات', icon:'📚', color:'#B4783F'},
+    {key:'دروس خصوصية', icon:'🧑‍🏫', color:'#8A9E7A'},
+    {key:'سنتر / مجموعات', icon:'🏫', color:'#6b8cae'},
+    {key:'اشتراكات أونلاين', icon:'💻', color:'#9e6b8a'},
+    {key:'امتحانات وتجارب', icon:'📝', color:'#C9A15A'},
+    {key:'أدوات مكتبية', icon:'✏️', color:'#7a9e8e'},
+    {key:'مواصلات', icon:'🚌', color:'#5f7284'},
+    {key:'أخرى', icon:'🧾', color:'#A6714F'},
+  ];
+  function expCatInfo(name){
+    return EXPENSE_CATS.find(c=>c.key===name) || EXPENSE_CATS[EXPENSE_CATS.length-1];
+  }
+
+  const DAYS = [
+    {key:'sat', label:'السبت'},
+    {key:'sun', label:'الأحد'},
+    {key:'mon', label:'الاثنين'},
+    {key:'tue', label:'الثلاثاء'},
+    {key:'wed', label:'الأربعاء'},
+    {key:'thu', label:'الخميس'},
+    {key:'fri', label:'الجمعة'},
+  ];
+  const JS_DAY_TO_KEY = ['sun','mon','tue','wed','thu','fri','sat']; // Date.getDay() index
+
+  const PRESETS = [
+    "درس فيزياء","درس كيمياء","درس أحياء","درس عربي","درس إنجليزي",
+    "حل واجب","مراجعة","مشوار","راحة","نوم","تحسين اللغة الإنجليزية"
+  ];
+
+  const CAT_COLORS = {
+    "فيزياء":"#6b8cae","كيمياء":"#7a9e8e","أحياء":"#8a9e6b","عربي":"#b39a6b",
+    "إنجليزي":"#9e6b8a","تحسين اللغة الإنجليزية":"#9e6b8a","حل واجب":"#6b8a9e",
+    "مراجعة":"#8a6b9e","مشوار":"#9e8a6b","راحة":"#5f7284","نوم":"#45566a"
+  };
+  function colorFor(name){
+    for(const key in CAT_COLORS){ if(name && name.includes(key)) return CAT_COLORS[key]; }
+    return null; // fallback to --accent via CSS var default
+  }
+
+  /* Timeline rail range: 06:00 -> 24:00 */
+  const RAIL_START = 6*60, RAIL_END = 24*60, RAIL_TOTAL = RAIL_END - RAIL_START;
+
+  /* ---------------- Default template ---------------- */
+  function defaultBlocks(){
+    const t = [
+      ["06:30","07:00","استيقاظ وتحضير"],
+      ["07:00","09:00","درس فيزياء"],
+      ["09:00","09:15","راحة"],
+      ["09:15","11:15","درس كيمياء"],
+      ["11:15","11:30","راحة"],
+      ["11:30","13:00","درس أحياء"],
+      ["13:00","14:00","راحة"],
+      ["14:00","15:30","حل واجب"],
+      ["15:30","15:45","راحة"],
+      ["15:45","17:15","مراجعة"],
+      ["17:15","17:30","راحة"],
+      ["17:30","19:00","درس عربي"],
+      ["19:00","19:30","راحة"],
+      ["19:30","21:00","درس إنجليزي"],
+      ["21:00","21:30","تحسين اللغة الإنجليزية"],
+      ["21:30","22:30","راحة"],
+      ["22:30","23:59","نوم"],
+    ];
+    return t.map(([start,end,activity],i)=>({
+      id: 'b'+Date.now()+'_'+i, start, end, activity, notes:""
+    }));
+  }
+
+  function defaultData(){
+    const days = {};
+    DAYS.forEach(d=>{ days[d.key] = { notes:"", blocks: defaultBlocks() }; });
+    return { days };
+  }
+
+  /* ---------------- Syllabus curriculum data ---------------- */
+  const SYLLABUS = [
+    { id:'arabic', name:'اللغة العربية', icon:'📖', color:'#B4783F', chapters:[
+      {id:'ar_c1', name:'الوحدة الأولى', lessons:[
+        {id:'ar_c1_l1', name:'قراءة: إرادة التغيير'},
+        {id:'ar_c1_l2', name:'نص: الكنيسة لم تكن هنالك'},
+        {id:'ar_c1_l3', name:'أدب: المدرسة الرومانتيكية'}]},
+      {id:'ar_c2', name:'الوحدة الثانية', lessons:[
+        {id:'ar_c2_l1', name:'قراءة: أبو الريحان البيروني'},
+        {id:'ar_c2_l2', name:'نص: من خطاب الإمام أحمد عرابي'},
+        {id:'ar_c2_l3', name:'أدب: المدرسة الكلاسيكية الجديدة'}]},
+      {id:'ar_c3', name:'الوحدة الثالثة', lessons:[
+        {id:'ar_c3_l1', name:'قراءة: المسرح العربي'},
+        {id:'ar_c3_l2', name:'نص: غربة وحنين لأحمد شوقي'},
+        {id:'ar_c3_l3', name:'أدب: شعراء المدرسة الواقعية'}]},
+      {id:'ar_c4', name:'الوحدة الرابعة', lessons:[
+        {id:'ar_c4_l1', name:'قراءة: قيم ومثل'},
+        {id:'ar_c4_l2', name:'نص: نسور الشرق'},
+        {id:'ar_c4_l3', name:'أدب: المنهج الواقعي والشعر الحديث'}]},
+      {id:'ar_c56', name:'الوحدتان الخامسة والسادسة', lessons:[
+        {id:'ar_c56_l1', name:'قراءة: تكامل المعرفة والعلم'},
+        {id:'ar_c56_l2', name:'نص: المساء لخليل مطران'},
+        {id:'ar_c56_l3', name:'أدب: مدرسة أبولّو والديوان'}]},
+      {id:'ar_story', name:'القصة: الأيام لطه حسين', lessons:[
+        {id:'ar_story_l1', name:'الجزء الأول: الطفولة والأزهر'},
+        {id:'ar_story_l2', name:'الجزء الثاني: حياة الأزهريين ودار العلوم'}]},
+      {id:'ar_balagha', name:'البلاغة', lessons:[
+        {id:'ar_bl_l1', name:'التجربة الشعرية'},
+        {id:'ar_bl_l2', name:'الوحدة الفنية والعضوية'},
+        {id:'ar_bl_l3', name:'الصور البيانية'},
+        {id:'ar_bl_l4', name:'المحسنات البديعية'},
+        {id:'ar_bl_l5', name:'أساليب الخبر والإنشاء'}]},
+      {id:'ar_nahw', name:'النحو', lessons:[
+        {id:'ar_nh_l1', name:'الوحدة 1: الهمزات والألف اللينة'},
+        {id:'ar_nh_l2', name:'الوحدة 2: الأبنية والمشتقات'},
+        {id:'ar_nh_l3', name:'الوحدة 3: المبتدأ والخبر والنواسخ'},
+        {id:'ar_nh_l4', name:'الوحدة 4: المفعولات والحال والتمييز'},
+        {id:'ar_nh_l5', name:'الوحدة 5: أسلوب الشرط والجزم'},
+        {id:'ar_nh_l6', name:'الوحدة 6: الممنوع من الصرف والتوابع'},
+        {id:'ar_nh_l7', name:'الوحدة 7: المصادر والاسم المقصور والممدود'}]}
+    ]},
+    { id:'english', name:'اللغة الإنجليزية', icon:'🇬🇧', color:'#9e6b8a', chapters:[
+      {id:'en_g1', name:'جرامر الترم الأول (Units 1–6)', lessons:[
+        {id:'en1', name:'Unit 1: Present Perfect'},
+        {id:'en2', name:'Unit 2: Reported Speech'},
+        {id:'en3', name:'Unit 3: Future Forms'},
+        {id:'en4', name:'Unit 4: Modals of Obligation'},
+        {id:'en5', name:'Unit 5: Gerund & Infinitive'},
+        {id:'en6', name:'Unit 6: Causative Verbs'}]},
+      {id:'en_g2', name:'جرامر الترم الثاني (Units 7–12)', lessons:[
+        {id:'en7', name:'Unit 7: Past Simple & Continuous'},
+        {id:'en8', name:'Unit 8: Past Perfect'},
+        {id:'en9', name:'Unit 9: Passive Voice'},
+        {id:'en10', name:'Unit 10: Relative Clauses'},
+        {id:'en11', name:'Unit 11: Adjectives & Adverbs'},
+        {id:'en12', name:'Unit 12: Conditionals'}]},
+      {id:'en_novel', name:'القصة: Great Expectations', lessons:[
+        {id:'en_n1', name:'الأحداث والشخصيات الرئيسية'},
+        {id:'en_n2', name:'أسئلة التفكير الناقد'}]},
+      {id:'en_writing', name:'مهارات الكتابة', lessons:[
+        {id:'en_w1', name:'علامات الترقيم'},
+        {id:'en_w2', name:'أجزاء الكلام'},
+        {id:'en_w3', name:'هيكل المقال'},
+        {id:'en_w4', name:'أنواع المقالات'}]},
+      {id:'en_exam', name:'مهارات الامتحان', lessons:[
+        {id:'en_e1', name:'استيعاب المقروء (Reading)'},
+        {id:'en_e2', name:'الترجمة (Translation)'}]}
+    ]},
+    { id:'chem', name:'الكيمياء', icon:'🧪', color:'#7a9e8e', chapters:[
+      {id:'ch1', name:'الباب الأول: العناصر الانتقالية', lessons:[
+        {id:'ch1_1', name:'الأهمية الاقتصادية والخواص العامة'},
+        {id:'ch1_2', name:'استخلاص الحديد'},
+        {id:'ch1_3', name:'السبائك'},
+        {id:'ch1_4', name:'أكاسيد الحديد'}]},
+      {id:'ch2', name:'الباب الثاني: التحليل الكيميائي', lessons:[
+        {id:'ch2_1', name:'مجموعة HCl المخفف'},
+        {id:'ch2_2', name:'مجموعة H₂SO₄ المركز'},
+        {id:'ch2_3', name:'مجموعة BaCl₂ والكاتيونات'},
+        {id:'ch2_4', name:'التحليل الحجمي والكتلي'}]},
+      {id:'ch3', name:'الباب الثالث: الاتزان الكيميائي', lessons:[
+        {id:'ch3_1', name:'الاتزان الكيميائي وقاعدة لوشاتيليه'},
+        {id:'ch3_2', name:'الاتزان الأيوني وpH'},
+        {id:'ch3_3', name:'حاصل الإذابة Ksp'}]},
+      {id:'ch4', name:'الباب الرابع: الكيمياء الكهربية', lessons:[
+        {id:'ch4_1', name:'الخلايا الجلفانية والـ emf'},
+        {id:'ch4_2', name:'الخلايا الأولية والثانوية'},
+        {id:'ch4_3', name:'الخلايا الإلكتروليتية وفاراداي'}]},
+      {id:'ch5', name:'الباب الخامس: الكيمياء العضوية', lessons:[
+        {id:'ch5_1', name:'مقدمة والأيزوميرزم'},
+        {id:'ch5_2', name:'الهيدروكربونات الأليفاتية'},
+        {id:'ch5_3', name:'الهيدروكربونات الأروماتية'},
+        {id:'ch5_4', name:'مشتقات الهيدروكربونات'}]}
+    ]},
+    { id:'phys', name:'الفيزياء', icon:'⚡', color:'#6b8cae', chapters:[
+      {id:'ph1', name:'الفصل 1: التيار الكهربي وقانون أوم', lessons:[
+        {id:'ph1_1', name:'قانون أوم والمقاومة'},
+        {id:'ph1_2', name:'توصيل المقاومات'},
+        {id:'ph1_3', name:'قانونا كيرشوف'}]},
+      {id:'ph2', name:'الفصل 2: التأثير المغناطيسي', lessons:[
+        {id:'ph2_1', name:'الفيض المغناطيسي'},
+        {id:'ph2_2', name:'القوى والعزوم المغناطيسية'},
+        {id:'ph2_3', name:'أجهزة القياس الكهربي'}]},
+      {id:'ph3', name:'الفصل 3: الحث الكهرومغناطيسي', lessons:[
+        {id:'ph3_1', name:'قوانين فاراداي ولينز'},
+        {id:'ph3_2', name:'الحث المتبادل والذاتي'},
+        {id:'ph3_3', name:'المولد والمحول والمحرك'}]},
+      {id:'ph4', name:'الفصل 4: دوائر التيار المتردد', lessons:[
+        {id:'ph4_1', name:'الأميتر الحراري'},
+        {id:'ph4_2', name:'دوائر RL وRC وRLC'},
+        {id:'ph4_3', name:'الرنين الكهربي'}]},
+      {id:'ph5', name:'الفصل 5: ازدواجية الموجة والجسيم', lessons:[
+        {id:'ph5_1', name:'إشعاع الجسم الأسود'},
+        {id:'ph5_2', name:'الظاهرة الكهروضوئية'},
+        {id:'ph5_3', name:'ظاهرة كومتون وطبيعة دي برولي'}]},
+      {id:'ph6', name:'الفصل 6: الأطياف الذرية', lessons:[
+        {id:'ph6_1', name:'نموذج بور لذرة الهيدروجين'},
+        {id:'ph6_2', name:'متسلسلات الطيف والمطياف'},
+        {id:'ph6_3', name:'الأشعة السينية'}]},
+      {id:'ph7', name:'الفصل 7: الليزر', lessons:[
+        {id:'ph7_1', name:'الانبعاث التلقائي والمستحث'},
+        {id:'ph7_2', name:'عناصر إنتاج الليزر'},
+        {id:'ph7_3', name:'ليزر الهيليوم-نيون وتطبيقاته'}]},
+      {id:'ph8', name:'الفصل 8: الإلكترونيات الحديثة', lessons:[
+        {id:'ph8_1', name:'أشباه الموصلات'},
+        {id:'ph8_2', name:'الوصلة الثنائية Diode'},
+        {id:'ph8_3', name:'الترانزستور والبوابات المنطقية'}]}
+    ]},
+    { id:'bio', name:'الأحياء', icon:'🧬', color:'#8a9e6b', chapters:[
+      {id:'bi1', name:'الفصل 1: الدعامة والحركة', lessons:[
+        {id:'bi1_1', name:'الدعامة في النبات'},
+        {id:'bi1_2', name:'الجهاز الهيكلي في الإنسان'},
+        {id:'bi1_3', name:'الحركة في النبات والجهاز العضلي'}]},
+      {id:'bi2', name:'الفصل 2: التنسيق الهرموني', lessons:[
+        {id:'bi2_1', name:'الأوكسينات في النبات'},
+        {id:'bi2_2', name:'الغدد الصماء في الإنسان'}]},
+      {id:'bi3', name:'الفصل 3: التكاثر', lessons:[
+        {id:'bi3_1', name:'طرق التكاثر وتعاقب الأجيال'},
+        {id:'bi3_2', name:'التكاثر في النباتات الزهرية'},
+        {id:'bi3_3', name:'التكاثر في الإنسان'}]},
+      {id:'bi4', name:'الفصل 4: المناعة', lessons:[
+        {id:'bi4_1', name:'المناعة في النبات'},
+        {id:'bi4_2', name:'الأعضاء والخلايا الليمفاوية'},
+        {id:'bi4_3', name:'خطوط الدفاع الثلاثة'}]},
+      {id:'bi5', name:'الفصل 5: DNA والمعلومات الوراثية', lessons:[
+        {id:'bi5_1', name:'اكتشاف المادة الوراثية'},
+        {id:'bi5_2', name:'تركيب وتضاعف DNA'},
+        {id:'bi5_3', name:'الطفرات'}]},
+      {id:'bi6', name:'الفصل 6: RNA وتخليق البروتين', lessons:[
+        {id:'bi6_1', name:'أنواع RNA الثلاثة'},
+        {id:'bi6_2', name:'مراحل تخليق البروتين'},
+        {id:'bi6_3', name:'الهندسة الوراثية'}]}
+    ]}
+  ];
+
+  const QUOTES = {
+    arabic:["لغتك هويتك.. وكل باب تخلّصه بيقرّبك من الثانوية العامة اللي بتستاهلها.","الأدب مش حفظ، هو فهم إحساس ناس تانية.. وانت دلوقتي بتفهمه صح.","خطوة كمان في العربي، وهدفك بقى أوضح.","كل وحدة تخلّصها بتبني فيك طالب أقوى في التعبير والفهم."],
+    english:["Great job! خطوة كمان قربتك من إتقان الإنجليزي.","كل Unit تخلّصه بيفتحلك باب جديد في اللغة.","Keep going! انت أقرب لهدفك مما تتخيل.","English isn't just a subject, it's a skill you just leveled up."],
+    chem:["تفاعل النجاح مستمر.. وانت العامل الحفاز فيه!","كل باب كيميا تخلّصه بيزود تركيز ثقتك في نفسك.","مبروك! درجة كبيرة قربت منك دلوقتي.","الكيمياء صعبة على اللي بيهرب منها بس مش عليك انت."],
+    phys:["قانون النجاح بسيط: مجهود = نتيجة.. وانت شغال صح.","كل باب فيزياء تخلّصه طاقة إضافية ليوم الامتحان.","إنجاز جديد! العقل اللي بيفهم الفيزياء يقدر على أي حاجة.","استمر، السرعة اللي بتذاكر بيها هتوصلك بدري."],
+    bio:["كل فصل أحياء تخلّصه بيقربك خطوة من كلية أحلامك.","جسم الإنسان معقد.. وانت أثبتت إنك تقدر تفهمه بالتفصيل.","مبروك الإنجاز! تراكم زي ده هو اللي بيصنع الفرق.","استمر في الحفظ والفهم، النتيجة قربت تبان."],
+    default:["مبروك الإنجاز! كل باب تخلّصه هو خطوة حقيقية ناحية حلمك.","استمر كده، الطريق للثانوية العامة بيتقصر كل يوم بمجهودك.","فخورين بيك.. كمّل بنفس الحماس!"]
+  };
+
+  /* ---------------- State & persistence ---------------- */
+  let data = loadData();
+  let selectedDay = JS_DAY_TO_KEY[new Date().getDay()];
+  let activeBlockId = null;
+  const alertedToday = new Set();
+  let saveTimer = null;
+  let currentView = 'home';
+  let syllabusOpenSet = new Set();
+  let syllabusData = loadSyllabus();
+  let prevCompleteChapters = new Set(computeCompleteChapters());
+  let expenses = loadExpenses();
+  let editingExpenseId = null;
+  let todos = loadTodos();
+
+  function loadData(){
+    try{
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if(!raw) return defaultData();
+      const parsed = JSON.parse(raw);
+      if(!parsed.days) return defaultData();
+      DAYS.forEach(d=>{ if(!parsed.days[d.key]) parsed.days[d.key] = {notes:"", blocks:[]}; });
+      return parsed;
+    }catch(e){ return defaultData(); }
+  }
+
+  function saveData(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      pulseSave();
+    }catch(e){ /* storage unavailable — fail silently */ }
+  }
+  function saveDataDebounced(){
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(saveData, 400);
+  }
+  function pulseSave(){
+    const p = document.getElementById('savePulse');
+    if(!p) return;
+    p.classList.add('show');
+    setTimeout(()=>p.classList.remove('show'), 700);
+  }
+
+  function loadSyllabus(){
+    try{
+      const raw = localStorage.getItem(SYLLABUS_KEY);
+      if(!raw) return {};
+      return JSON.parse(raw) || {};
+    }catch(e){ return {}; }
+  }
+  function saveSyllabus(){
+    try{ localStorage.setItem(SYLLABUS_KEY, JSON.stringify(syllabusData)); }catch(e){}
+  }
+  function loadExpenses(){
+    try{
+      const raw = localStorage.getItem(EXPENSES_KEY);
+      if(!raw) return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    }catch(e){ return []; }
+  }
+  function saveExpenses(){
+    try{ localStorage.setItem(EXPENSES_KEY, JSON.stringify(expenses)); }catch(e){}
+  }
+  function loadTodos(){
+    try{
+      const raw = localStorage.getItem(TODOS_KEY);
+      if(!raw) return [];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    }catch(e){ return []; }
+  }
+  function saveTodos(){
+    try{ localStorage.setItem(TODOS_KEY, JSON.stringify(todos)); }catch(e){}
+  }
+  function computeCompleteChapters(){
+    const set = new Set();
+    SYLLABUS.forEach(subj=>{
+      subj.chapters.forEach(ch=>{
+        const all = ch.lessons.every(l=> !!syllabusData[l.id]);
+        if(all) set.add(ch.id);
+      });
+    });
+    return set;
+  }
+
+  /* ---------------- Time helpers ---------------- */
+  function minutesOf(hhmm){
+    const [h,m] = hhmm.split(':').map(Number);
+    return h*60+m;
+  }
+  function nowMinutes(){
+    const n = new Date();
+    return n.getHours()*60 + n.getMinutes() + n.getSeconds()/60;
+  }
+  function fmtHM(mins){
+    const h = Math.floor(mins/60), m = Math.floor(mins%60);
+    return String(h).padStart(2,'0')+":"+String(m).padStart(2,'0');
+  }
+
+  /* ---------------- Theme ---------------- */
+  function initTheme(){
+    let theme = localStorage.getItem(THEME_KEY);
+    if(!theme) theme = 'light';
+    applyTheme(theme);
+  }
+  function applyTheme(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    document.getElementById('themeToggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+    try{ localStorage.setItem(THEME_KEY, theme); }catch(e){}
+  }
+  function toggleTheme(){
+    const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    applyTheme(cur === 'dark' ? 'light' : 'dark');
+  }
+
+  /* ---------------- Floating particles ---------------- */
+  function initParticles(){
+    const wrap = document.getElementById('particles');
+    const n = 14;
+    for(let i=0;i<n;i++){
+      const p = document.createElement('span');
+      p.className = 'particle';
+      const size = 2 + Math.random()*4;
+      p.style.width = size+'px';
+      p.style.height = size+'px';
+      p.style.left = Math.random()*100+'vw';
+      p.style.setProperty('--dx', (Math.random()*60-30)+'px');
+      const dur = 14 + Math.random()*18;
+      p.style.animationDuration = dur+'s';
+      p.style.animationDelay = (-Math.random()*dur)+'s';
+      wrap.appendChild(p);
+    }
+  }
+
+  /* ---------------- View navigation ---------------- */
+  function showView(name){
+    currentView = name;
+    ['viewHome','viewDay','viewSyllabus','viewExpenses','viewTodo'].forEach(id=>{
+      document.getElementById(id).classList.remove('active');
+    });
+    const map = {home:'viewHome', day:'viewDay', syllabus:'viewSyllabus', expenses:'viewExpenses', todo:'viewTodo'};
+    document.getElementById(map[name]).classList.add('active');
+    document.getElementById('tabHome').classList.toggle('active', name==='home' || name==='day');
+    document.getElementById('tabSyllabus').classList.toggle('active', name==='syllabus');
+    document.getElementById('tabExpenses').classList.toggle('active', name==='expenses');
+    document.getElementById('tabTodo').classList.toggle('active', name==='todo');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  /* ---------------- Header counters ---------------- */
+  function updateCounters(){
+    const now = new Date();
+    const totalMs = END_DATE - START_DATE;
+    const elapsedMs = Math.min(Math.max(now - START_DATE, 0), totalMs);
+    const remainMs = Math.max(END_DATE - now, 0);
+
+    const elapsedDays = Math.floor(elapsedMs / 86400000);
+    const remainDays = Math.ceil(remainMs / 86400000);
+
+    document.getElementById('elapsedVal').textContent = elapsedDays + " يوم";
+    document.getElementById('remainVal').textContent = remainDays + " يوم";
+
+    const pct = totalMs>0 ? Math.min(100, Math.max(0,(elapsedMs/totalMs)*100)) : 0;
+    document.getElementById('ringPct').textContent = pct.toFixed(0)+"%";
+    const circumference = 2*Math.PI*19;
+    const offset = circumference * (1 - pct/100);
+    document.getElementById('ringFill').style.strokeDasharray = circumference.toFixed(1);
+    document.getElementById('ringFill').style.strokeDashoffset = offset.toFixed(1);
+  }
+
+  /* ---------------- Home: day lines ---------------- */
+  function renderHomeDays(){
+    const todayKey = JS_DAY_TO_KEY[new Date().getDay()];
+    const wrap = document.getElementById('dayLines');
+    wrap.innerHTML = "";
+    DAYS.forEach((d,i)=>{
+      const count = (data.days[d.key].blocks||[]).length;
+      const btn = document.createElement('button');
+      btn.className = 'day-line' + (d.key===todayKey ? ' today':'');
+      btn.innerHTML = `
+        <span class="dl-name"><span class="idx">${String(i+1).padStart(2,'0')}</span>${d.label}${d.key===todayKey?'<span class="dl-badge">اليوم</span>':''}</span>
+        <span class="dl-meta"><span>${count} خانة زمنية</span><span class="dl-arrow">‹</span></span>
+      `;
+      btn.addEventListener('click', ()=>{
+        selectedDay = d.key;
+        showView('day');
+        renderDayView();
+      });
+      wrap.appendChild(btn);
+    });
+  }
+
+  /* ---------------- Day view ---------------- */
+  function renderDayView(){
+    const todayKey = JS_DAY_TO_KEY[new Date().getDay()];
+    const isToday = selectedDay === todayKey;
+    const dayLabel = DAYS.find(d=>d.key===selectedDay).label;
+    document.getElementById('dayViewTitle').textContent = dayLabel + (isToday ? ' (اليوم)' : '');
+    document.getElementById('dayViewSub').textContent = isToday ? 'خطك الزمني الحي — يتحدّث لحظيًا' : 'خطة هذا اليوم من الأسبوع';
+    renderTimeline();
+    renderDayNotes();
+    updateRail();
+  }
+
+  /* ---------------- Rail (literal timeline line) ---------------- */
+  function updateRail(){
+    const todayKey = JS_DAY_TO_KEY[new Date().getDay()];
+    const isToday = selectedDay === todayKey;
+    const railLine = document.getElementById('railLine');
+    const dot = document.getElementById('railNowDot');
+    if(isToday){
+      const nowM = Math.min(Math.max(nowMinutes(), RAIL_START), RAIL_END);
+      const pct = ((nowM - RAIL_START) / RAIL_TOTAL) * 100;
+      railLine.style.setProperty('--now-pct', pct.toFixed(2)+'%');
+      dot.style.display = 'block';
+      dot.style.top = pct.toFixed(2)+'%';
+    } else {
+      railLine.style.setProperty('--now-pct', '0%');
+      dot.style.display = 'none';
+    }
+  }
+
+  let ghostEl = null;
+  function removeGhost(){
+    if(ghostEl){ ghostEl.remove(); ghostEl = null; }
+  }
+  function initRailClicks(){
+    const col = document.getElementById('railCol');
+    col.addEventListener('click', (e)=>{
+      if(e.target.closest('.ghost-node')) return;
+      const rect = col.getBoundingClientRect();
+      const fracY = Math.min(Math.max((e.clientY - rect.top) / rect.height, 0), 1);
+      const rawMin = RAIL_START + fracY * RAIL_TOTAL;
+      const snapped = Math.round(rawMin/5)*5;
+      removeGhost();
+      const node = document.createElement('div');
+      node.className = 'ghost-node';
+      node.textContent = '+';
+      node.style.top = (fracY*100).toFixed(2)+'%';
+      node.title = 'إضافة مهمة عند ' + fmtHM(snapped);
+      node.addEventListener('click', (ev)=>{
+        ev.stopPropagation();
+        addBlockAtTime(snapped);
+        removeGhost();
+      });
+      col.appendChild(node);
+      ghostEl = node;
+    });
+    document.addEventListener('click', (e)=>{
+      if(ghostEl && !e.target.closest('.rail-col')) removeGhost();
+    });
+  }
+
+  /* ---------------- Days row / timeline rendering ---------------- */
+  function renderTimeline(){
+    const todayKey = JS_DAY_TO_KEY[new Date().getDay()];
+    const isToday = selectedDay === todayKey;
+    const dayObj = data.days[selectedDay];
+
+    const wrap = document.getElementById('timeline');
+    wrap.innerHTML = "";
+
+    const blocks = (dayObj.blocks||[]).slice().sort((a,b)=>minutesOf(a.start)-minutesOf(b.start));
+
+    if(blocks.length===0){
+      wrap.innerHTML = `<div class="empty-day">لا توجد أنشطة مضافة بعد. اضغط على الخط بجانب القائمة أو زر "إضافة خانة زمنية" بالأسفل للبدء.</div>`;
+      return;
+    }
+
+    const nowM = isToday ? nowMinutes() : null;
+
+    blocks.forEach(b=>{
+      const startM = minutesOf(b.start), endM = minutesOf(b.end);
+      const dur = Math.max(endM-startM, 1);
+      let progress = 0, doneClass = "";
+      if(isToday){
+        if(nowM >= endM){ progress = 100; doneClass = " done"; }
+        else if(nowM > startM){ progress = ((nowM-startM)/dur)*100; }
+      }
+      const col = colorFor(b.activity);
+      const el = document.createElement('div');
+      el.className = 'block'+doneClass;
+      if(col) el.style.setProperty('--cat-color', col);
+      el.dataset.id = b.id;
+
+      el.innerHTML = `
+        <div class="block-fill" style="--progress:${progress}%"></div>
+        <div class="block-inner">
+          <div class="cat-bar"></div>
+          <div class="block-main" data-open="${b.id}">
+            <div class="block-time">
+              <input type="time" value="${b.start}" data-field="start" data-id="${b.id}">
+              <span>—</span>
+              <input type="time" value="${b.end}" data-field="end" data-id="${b.id}">
+            </div>
+            <div class="block-title">${escapeHtml(b.activity || 'نشاط بدون اسم')}</div>
+            ${b.notes ? `<div class="block-note-flag">📝 يحتوي على ملاحظات</div>` : ``}
+          </div>
+          <div class="block-actions">
+            <select class="activity-select" data-id="${b.id}" data-field="activity">
+              ${activityOptions(b.activity)}
+            </select>
+            <button class="icon-btn del" data-del="${b.id}" title="حذف">✕</button>
+          </div>
+        </div>
+      `;
+      wrap.appendChild(el);
+    });
+
+    // Bind time inputs
+    wrap.querySelectorAll('input[type=time]').forEach(inp=>{
+      inp.addEventListener('change', e=>{
+        const id = e.target.dataset.id, field = e.target.dataset.field;
+        updateBlock(id, {[field]: e.target.value});
+      });
+    });
+    // Bind activity select
+    wrap.querySelectorAll('select.activity-select').forEach(sel=>{
+      sel.addEventListener('change', e=>{
+        const id = e.target.dataset.id;
+        let val = e.target.value;
+        if(val === '__custom__'){
+          val = prompt('اكتب اسم النشاط الجديد:', '') || '';
+          if(!val){ renderTimeline(); return; }
+        }
+        updateBlock(id, {activity: val});
+      });
+    });
+    // Bind delete
+    wrap.querySelectorAll('[data-del]').forEach(btn=>{
+      btn.addEventListener('click', e=>{
+        const id = e.currentTarget.dataset.del;
+        if(confirm('هل تريد حذف هذه الخانة الزمنية؟')){
+          removeBlock(id);
+        }
+      });
+    });
+    // Bind open detail panel
+    wrap.querySelectorAll('[data-open]').forEach(el=>{
+      el.addEventListener('click', ()=> openBottomPanel(el.dataset.open));
+    });
+  }
+
+  function activityOptions(current){
+    let opts = PRESETS.map(p=>`<option value="${p}" ${p===current?'selected':''}>${p}</option>`).join('');
+    const isCustom = current && !PRESETS.includes(current);
+    if(isCustom) opts += `<option value="${escapeHtml(current)}" selected>${escapeHtml(current)}</option>`;
+    opts += `<option value="__custom__">✎ نشاط آخر...</option>`;
+    return opts;
+  }
+
+  function escapeHtml(s){
+    return (s||"").replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function findBlock(id){
+    const blocks = data.days[selectedDay].blocks;
+    return blocks.find(b=>b.id===id);
+  }
+  function updateBlock(id, patch){
+    const b = findBlock(id);
+    if(!b) return;
+    Object.assign(b, patch);
+    saveDataDebounced();
+    renderTimeline();
+  }
+  function removeBlock(id){
+    const blocks = data.days[selectedDay].blocks;
+    data.days[selectedDay].blocks = blocks.filter(b=>b.id!==id);
+    saveDataDebounced();
+    renderTimeline();
+    renderHomeDays();
+  }
+  function addBlock(activityName){
+    const blocks = data.days[selectedDay].blocks;
+    let start = "07:00";
+    if(blocks.length){
+      const last = blocks.slice().sort((a,b)=>minutesOf(a.end)-minutesOf(b.end)).pop();
+      start = last.end;
+    }
+    let endM = minutesOf(start) + 60;
+    if(endM > 23*60+59) endM = 23*60+59;
+    const newBlock = {
+      id: 'b'+Date.now()+'_'+Math.floor(Math.random()*1000),
+      start, end: fmtHM(endM),
+      activity: activityName || "نشاط جديد",
+      notes: ""
+    };
+    blocks.push(newBlock);
+    saveDataDebounced();
+    renderTimeline();
+    renderHomeDays();
+    openBottomPanel(newBlock.id);
+  }
+  function addBlockAtTime(startMin){
+    const blocks = data.days[selectedDay].blocks;
+    let endM = Math.min(startMin + 60, 23*60+59);
+    const newBlock = {
+      id: 'b'+Date.now()+'_'+Math.floor(Math.random()*1000),
+      start: fmtHM(startMin), end: fmtHM(endM),
+      activity: "مهمة جديدة",
+      notes: ""
+    };
+    blocks.push(newBlock);
+    saveDataDebounced();
+    renderTimeline();
+    renderHomeDays();
+    openBottomPanel(newBlock.id);
+  }
+
+  /* ---------------- Bottom detail panel ---------------- */
+  function openBottomPanel(id){
+    const b = findBlock(id);
+    if(!b) return;
+    activeBlockId = id;
+    document.getElementById('bpTitle').textContent = b.activity || 'نشاط';
+    document.getElementById('bpTime').textContent = `${b.start} — ${b.end} · ${DAYS.find(d=>d.key===selectedDay).label}`;
+    document.getElementById('bpActivityName').value = b.activity || '';
+    document.getElementById('bpNotes').value = b.notes || '';
+    const col = colorFor(b.activity);
+    document.getElementById('bpDot').style.background = col || 'var(--accent)';
+    document.getElementById('overlay').classList.add('show');
+    document.getElementById('bottomPanel').classList.add('open');
+  }
+  function closeBottomPanel(){
+    document.getElementById('overlay').classList.remove('show');
+    document.getElementById('bottomPanel').classList.remove('open');
+    activeBlockId = null;
+  }
+  function saveBottomPanel(){
+    if(!activeBlockId) return;
+    const name = document.getElementById('bpActivityName').value.trim();
+    const notes = document.getElementById('bpNotes').value;
+    updateBlock(activeBlockId, { activity: name || 'نشاط', notes });
+    closeBottomPanel();
+  }
+
+  /* ---------------- Day notes ---------------- */
+  function renderDayNotes(){
+    document.getElementById('dayNotesArea').value = data.days[selectedDay].notes || '';
+  }
+
+  /* ---------------- Alerts (sound + toast) ---------------- */
+  let audioCtx = null;
+  function beep(){
+    try{
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      const o = audioCtx.createOscillator();
+      const g = audioCtx.createGain();
+      o.type = 'sine';
+      o.frequency.setValueAtTime(660, audioCtx.currentTime);
+      g.gain.setValueAtTime(0.001, audioCtx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.18, audioCtx.currentTime+0.03);
+      g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime+0.5);
+      o.connect(g); g.connect(audioCtx.destination);
+      o.start();
+      o.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime+0.25);
+      o.stop(audioCtx.currentTime+0.55);
+    }catch(e){ /* audio unavailable */ }
+  }
+  function showToast(finishedName, nextName){
+    const wrap = document.getElementById('toastWrap');
+    const t = document.createElement('div');
+    t.className = 'toast';
+    t.innerHTML = `<b>⏰ انتهى الوقت، انتقل للنشاط التالي</b>
+      "${escapeHtml(finishedName)}" انتهى${nextName ? ` — التالي: <strong>${escapeHtml(nextName)}</strong>` : ''}`;
+    wrap.appendChild(t);
+    setTimeout(()=>{ t.style.opacity='0'; t.style.transform='translateY(8px)'; t.style.transition='all .4s'; setTimeout(()=>t.remove(),400); }, 6000);
+  }
+  function checkAlerts(){
+    const todayKey = JS_DAY_TO_KEY[new Date().getDay()];
+    const blocks = (data.days[todayKey].blocks||[]).slice().sort((a,b)=>minutesOf(a.start)-minutesOf(b.start));
+    const nowM = nowMinutes();
+    blocks.forEach((b,i)=>{
+      const endM = minutesOf(b.end);
+      const key = todayKey+'_'+b.id;
+      if(nowM >= endM && nowM - endM < 1 && !alertedToday.has(key)){
+        alertedToday.add(key);
+        const next = blocks[i+1];
+        showToast(b.activity, next ? next.activity : null);
+        beep();
+      }
+    });
+  }
+
+  /* ---------------- Syllabus rendering ---------------- */
+  function subjectLessonCount(subj){
+    let total=0, done=0;
+    subj.chapters.forEach(ch=>{
+      ch.lessons.forEach(l=>{ total++; if(syllabusData[l.id]) done++; });
+    });
+    return {total, done};
+  }
+  function chapterDoneCount(ch){
+    let done=0;
+    ch.lessons.forEach(l=>{ if(syllabusData[l.id]) done++; });
+    return done;
+  }
+
+  function renderSyllabus(){
+    const wrap = document.getElementById('subjectsWrap');
+    wrap.innerHTML = "";
+    SYLLABUS.forEach(subj=>{
+      const {total, done} = subjectLessonCount(subj);
+      const pct = total ? Math.round((done/total)*100) : 0;
+      const card = document.createElement('div');
+      card.className = 'subject-card' + (syllabusOpenSet.has(subj.id) ? ' open' : '');
+      card.innerHTML = `
+        <div class="subject-head" data-toggle="${subj.id}">
+          <div class="subject-head-l">
+            <span class="subject-icon">${subj.icon}</span>
+            <div>
+              <div class="subject-name">${subj.name}</div>
+              <div class="subject-sub">${done} من ${total} درس مكتمل</div>
+            </div>
+          </div>
+          <div class="subject-progress-wrap">
+            <div class="subject-progress-bar"><div class="subject-progress-fill" style="width:${pct}%;background:${subj.color};"></div></div>
+            <span class="subject-pct">${pct}%</span>
+            <span class="chev">▾</span>
+          </div>
+        </div>
+        <div class="chapters-wrap">
+          ${subj.chapters.map(ch=>{
+            const cdone = chapterDoneCount(ch);
+            const ctotal = ch.lessons.length;
+            const complete = cdone===ctotal;
+            const cpct = ctotal ? Math.round((cdone/ctotal)*100) : 0;
+            return `
+            <div class="chapter${complete?' complete':''}" data-chapter="${ch.id}" data-subject="${subj.id}">
+              <div class="chapter-head">
+                <span class="chapter-name"><span class="trophy">🏆</span>${ch.name}</span>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span style="font-size:11px;color:var(--text-3);">${cdone}/${ctotal}</span>
+                  <div class="chapter-mini-bar"><div class="chapter-mini-fill" style="width:${cpct}%;"></div></div>
+                </div>
+              </div>
+              <div class="lesson-list">
+                ${ch.lessons.map(l=>`
+                  <div class="lesson-item">
+                    <input type="checkbox" id="lc_${l.id}" data-lesson="${l.id}" data-chapter="${ch.id}" data-subject="${subj.id}" ${syllabusData[l.id]?'checked':''}>
+                    <label for="lc_${l.id}">${escapeHtml(l.name)}</label>
+                  </div>
+                `).join('')}
+              </div>
+            </div>`;
+          }).join('')}
+        </div>
+      `;
+      wrap.appendChild(card);
+    });
+
+    wrap.querySelectorAll('[data-toggle]').forEach(head=>{
+      head.addEventListener('click', ()=>{
+        const id = head.dataset.toggle;
+        if(syllabusOpenSet.has(id)) syllabusOpenSet.delete(id); else syllabusOpenSet.add(id);
+        renderSyllabus();
+      });
+    });
+    wrap.querySelectorAll('input[type=checkbox][data-lesson]').forEach(cb=>{
+      cb.addEventListener('change', e=>{
+        const lessonId = e.target.dataset.lesson;
+        const chapterId = e.target.dataset.chapter;
+        const subjectId = e.target.dataset.subject;
+        syllabusData[lessonId] = e.target.checked;
+        saveSyllabus();
+        const subj = SYLLABUS.find(s=>s.id===subjectId);
+        const ch = subj.chapters.find(c=>c.id===chapterId);
+        const nowComplete = ch.lessons.every(l=> !!syllabusData[l.id]);
+        if(nowComplete && !prevCompleteChapters.has(chapterId)){
+          prevCompleteChapters.add(chapterId);
+          showAchievement(subj, ch);
+        } else if(!nowComplete){
+          prevCompleteChapters.delete(chapterId);
+        }
+        renderSyllabus();
+      });
+    });
+  }
+
+  function showAchievement(subj, ch){
+    const pool = QUOTES[subj.id] || QUOTES.default;
+    const quote = pool[Math.floor(Math.random()*pool.length)];
+    document.getElementById('achEmoji').textContent = subj.icon;
+    document.getElementById('achChapter').textContent = `خلّصت ${ch.name} — ${subj.name}`;
+    document.getElementById('achQuote').textContent = quote;
+    document.getElementById('achOverlay').classList.add('show');
+    beep();
+  }
+  function closeAchievement(){
+    document.getElementById('achOverlay').classList.remove('show');
+  }
+
+  /* ---------------- Expenses ---------------- */
+  function todayIso(){
+    const n = new Date();
+    return n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0');
+  }
+  function fmtMoney(n){
+    const rounded = Math.round(Number(n)||0);
+    return rounded.toLocaleString('ar-EG') + ' جنيه';
+  }
+  function fmtDateArabic(iso){
+    try{
+      const d = new Date(iso+'T00:00:00');
+      return d.toLocaleDateString('ar-EG', {day:'numeric', month:'short'});
+    }catch(e){ return iso || ''; }
+  }
+  function populateExpenseCategorySelect(){
+    const sel = document.getElementById('expCategory');
+    sel.innerHTML = EXPENSE_CATS.map(c=>`<option value="${c.key}">${c.icon} ${c.key}</option>`).join('');
+  }
+
+  function renderExpenses(){
+    const total = expenses.reduce((s,e)=>s+(Number(e.amount)||0),0);
+    document.getElementById('expTotalVal').textContent = fmtMoney(total);
+    document.getElementById('expCountVal').textContent = expenses.length.toLocaleString('ar-EG');
+
+    const byCat = {};
+    expenses.forEach(e=>{ byCat[e.category] = (byCat[e.category]||0) + (Number(e.amount)||0); });
+    const sortedCats = Object.keys(byCat).sort((a,b)=>byCat[b]-byCat[a]);
+    document.getElementById('expTopVal').textContent = sortedCats.length ? sortedCats[0] : '—';
+
+    const catsWrap = document.getElementById('expCatsWrap');
+    if(sortedCats.length===0){
+      catsWrap.innerHTML = `<div class="exp-empty">لسه مفيش مصروفات مسجّلة</div>`;
+    } else {
+      catsWrap.innerHTML = sortedCats.map(catName=>{
+        const info = expCatInfo(catName);
+        const amt = byCat[catName];
+        const pct = total>0 ? Math.round((amt/total)*100) : 0;
+        return `
+          <div class="exp-cat-row">
+            <span class="exp-cat-icon">${info.icon}</span>
+            <span class="exp-cat-name">${escapeHtml(catName)}</span>
+            <div class="exp-cat-bar"><div class="exp-cat-fill" style="width:${pct}%;background:${info.color};"></div></div>
+            <span class="exp-cat-amount">${fmtMoney(amt)}</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    const listWrap = document.getElementById('expListWrap');
+    document.getElementById('expListCount').textContent = expenses.length ? `(${expenses.length})` : '';
+    if(expenses.length===0){
+      listWrap.innerHTML = `<div class="exp-empty">مفيش عمليات لسه. سجّل أول مصروف من الفورم اللي فوق.</div>`;
+    } else {
+      const sorted = expenses.slice().sort((a,b)=> (b.date||'').localeCompare(a.date||'') || String(b.id).localeCompare(String(a.id)));
+      listWrap.innerHTML = sorted.map(e=>{
+        const info = expCatInfo(e.category);
+        return `
+          <div class="exp-item" data-id="${e.id}">
+            <div class="exp-item-l">
+              <span class="exp-item-icon">${info.icon}</span>
+              <div class="exp-item-info">
+                <div class="exp-item-cat">${escapeHtml(e.category)}</div>
+                <div class="exp-item-meta">${fmtDateArabic(e.date)}${e.note ? ' · '+escapeHtml(e.note) : ''}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="exp-item-amount">${fmtMoney(Number(e.amount||0))}</span>
+              <div class="exp-item-actions">
+                <button class="icon-btn" data-exp-edit="${e.id}" title="تعديل">✎</button>
+                <button class="icon-btn del" data-exp-del="${e.id}" title="حذف">✕</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    listWrap.querySelectorAll('[data-exp-edit]').forEach(btn=>{
+      btn.addEventListener('click', e=> startEditExpense(e.currentTarget.dataset.expEdit));
+    });
+    listWrap.querySelectorAll('[data-exp-del]').forEach(btn=>{
+      btn.addEventListener('click', e=>{
+        const id = e.currentTarget.dataset.expDel;
+        if(confirm('هل تريد حذف هذا المصروف؟')){
+          expenses = expenses.filter(x=>String(x.id)!==String(id));
+          saveExpenses();
+          if(editingExpenseId===id) cancelEditExpense();
+          renderExpenses();
+        }
+      });
+    });
+  }
+
+  function startEditExpense(id){
+    const e = expenses.find(x=>String(x.id)===String(id));
+    if(!e) return;
+    editingExpenseId = e.id;
+    document.getElementById('expAmount').value = e.amount;
+    document.getElementById('expCategory').value = e.category;
+    document.getElementById('expDate').value = e.date;
+    document.getElementById('expNote').value = e.note || '';
+    document.getElementById('expFormTitle').textContent = 'تعديل مصروف';
+    document.getElementById('expAddBtn').textContent = 'حفظ التعديل';
+    document.getElementById('expCancelEditBtn').style.display = 'inline-flex';
+    document.getElementById('expAmount').focus();
+  }
+  function cancelEditExpense(){
+    editingExpenseId = null;
+    document.getElementById('expAmount').value = '';
+    document.getElementById('expNote').value = '';
+    document.getElementById('expDate').value = todayIso();
+    document.getElementById('expFormTitle').textContent = 'سجّل مصروف جديد';
+    document.getElementById('expAddBtn').textContent = '+ إضافة المصروف';
+    document.getElementById('expCancelEditBtn').style.display = 'none';
+  }
+  function submitExpenseForm(){
+    const amountRaw = document.getElementById('expAmount').value;
+    const amount = Number(amountRaw);
+    const category = document.getElementById('expCategory').value;
+    const date = document.getElementById('expDate').value || todayIso();
+    const note = document.getElementById('expNote').value.trim();
+    if(!amountRaw || isNaN(amount) || amount<=0){
+      alert('اكتب مبلغ صحيح أكبر من صفر');
+      return;
+    }
+    if(editingExpenseId){
+      const ex = expenses.find(x=>String(x.id)===String(editingExpenseId));
+      if(ex) Object.assign(ex, {amount, category, date, note});
+      cancelEditExpense();
+    } else {
+      expenses.push({ id:'e'+Date.now()+'_'+Math.floor(Math.random()*1000), amount, category, date, note });
+      document.getElementById('expAmount').value = '';
+      document.getElementById('expNote').value = '';
+    }
+    saveExpenses();
+    renderExpenses();
+  }
+
+  /* ---------------- Todo list ---------------- */
+  const TODO_RING_CIRC = 2*Math.PI*50;
+
+  function renderTodos(){
+    const total = todos.length;
+    const done = todos.filter(t=>t.done).length;
+    const pct = total ? Math.round((done/total)*100) : 0;
+
+    document.getElementById('todoPct').textContent = pct+'%';
+    document.getElementById('todoStatsText').textContent = total
+      ? `${done} من ${total} مهمة خلصتها`
+      : 'لسه مفيش مهام، ضيف أول واحدة';
+
+    const offset = TODO_RING_CIRC * (1 - pct/100);
+    const ring = document.getElementById('todoRingFill');
+    ring.style.strokeDasharray = TODO_RING_CIRC.toFixed(2);
+    ring.style.strokeDashoffset = offset.toFixed(2);
+
+    const wrap = document.getElementById('todoListWrap');
+    if(todos.length===0){
+      wrap.innerHTML = `<div class="exp-empty">لسه مفيش مهام مضافة. ضيف أول مهمة من الفورم اللي فوق.</div>`;
+      return;
+    }
+    const sorted = todos.slice().sort((a,b)=> (a.done===b.done ? 0 : a.done ? 1 : -1));
+    wrap.innerHTML = sorted.map(t=>`
+      <div class="todo-item" data-id="${t.id}">
+        <input type="checkbox" id="tc_${t.id}" data-todo="${t.id}" ${t.done?'checked':''}>
+        <label for="tc_${t.id}">${escapeHtml(t.text)}</label>
+        <button class="icon-btn del" data-todo-del="${t.id}" title="حذف">✕</button>
+      </div>
+    `).join('');
+
+    wrap.querySelectorAll('input[data-todo]').forEach(cb=>{
+      cb.addEventListener('change', e=>{
+        const id = e.target.dataset.todo;
+        const t = todos.find(x=>String(x.id)===String(id));
+        if(t){ t.done = e.target.checked; saveTodos(); renderTodos(); }
+      });
+    });
+    wrap.querySelectorAll('[data-todo-del]').forEach(btn=>{
+      btn.addEventListener('click', e=>{
+        const id = e.currentTarget.dataset.todoDel;
+        todos = todos.filter(x=>String(x.id)!==String(id));
+        saveTodos();
+        renderTodos();
+      });
+    });
+  }
+
+  function addTodo(){
+    const input = document.getElementById('todoInput');
+    const text = input.value.trim();
+    if(!text) return;
+    todos.push({ id:'t'+Date.now()+'_'+Math.floor(Math.random()*1000), text, done:false });
+    input.value = '';
+    saveTodos();
+    renderTodos();
+    input.focus();
+  }
+
+  /* ---------------- Render orchestration ---------------- */
+  function renderAll(){
+    renderHomeDays();
+    if(currentView==='day') renderDayView();
+    if(currentView==='syllabus') renderSyllabus();
+    if(currentView==='expenses') renderExpenses();
+    if(currentView==='todo') renderTodos();
+  }
+
+  function populateQuickPresetSelect(){
+    const sel = document.getElementById('quickPreset');
+    sel.innerHTML = `<option value="">اختر نشاطًا لإضافته سريعًا...</option>` +
+      PRESETS.map(p=>`<option value="${p}">${p}</option>`).join('');
+  }
+
+  /* ---------------- Event bindings ---------------- */
+  document.getElementById('addBlockBtn').addEventListener('click', ()=>{
+    const preset = document.getElementById('quickPreset').value;
+    addBlock(preset);
+    document.getElementById('quickPreset').value = "";
+  });
+  document.getElementById('dayNotesArea').addEventListener('input', e=>{
+    data.days[selectedDay].notes = e.target.value;
+    saveDataDebounced();
+  });
+  document.getElementById('bpClose').addEventListener('click', closeBottomPanel);
+  document.getElementById('overlay').addEventListener('click', closeBottomPanel);
+  document.getElementById('bpSave').addEventListener('click', saveBottomPanel);
+  document.getElementById('backHomeBtn').addEventListener('click', ()=>{ showView('home'); renderHomeDays(); });
+  document.getElementById('tabHome').addEventListener('click', ()=>{ showView('home'); renderHomeDays(); });
+  document.getElementById('tabSyllabus').addEventListener('click', ()=>{ showView('syllabus'); renderSyllabus(); });
+  document.getElementById('tabExpenses').addEventListener('click', ()=>{ showView('expenses'); renderExpenses(); });
+  document.getElementById('expAddBtn').addEventListener('click', submitExpenseForm);
+  document.getElementById('expCancelEditBtn').addEventListener('click', cancelEditExpense);
+  document.getElementById('tabTodo').addEventListener('click', ()=>{ showView('todo'); renderTodos(); });
+  document.getElementById('todoAddBtn').addEventListener('click', addTodo);
+  document.getElementById('todoInput').addEventListener('keydown', e=>{
+    if(e.key==='Enter'){ e.preventDefault(); addTodo(); }
+  });
+  document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+  document.getElementById('achClose').addEventListener('click', closeAchievement);
+  document.getElementById('achOverlay').addEventListener('click', (e)=>{ if(e.target.id==='achOverlay') closeAchievement(); });
+
+  /* ---------------- Init ---------------- */
+  initTheme();
+  initParticles();
+  initRailClicks();
+  populateQuickPresetSelect();
+  populateExpenseCategorySelect();
+  document.getElementById('expDate').value = todayIso();
+  showView('home');
+  renderAll();
+  updateCounters();
+
+  setInterval(()=>{
+    updateCounters();
+    if(currentView==='day'){
+      renderTimeline();
+      updateRail();
+    }
+    renderHomeDays();
+    checkAlerts();
+  }, 20000);
+
+  // Reset alerted set at midnight rollover
+  setInterval(()=>{
+    const nowKey = JS_DAY_TO_KEY[new Date().getDay()];
+    if(nowKey !== window.__lastKnownDay){
+      window.__lastKnownDay = nowKey;
+      alertedToday.clear();
+    }
+  }, 15000);
+  window.__lastKnownDay = JS_DAY_TO_KEY[new Date().getDay()];
+
+})();
+</script>
+</body>
+</html>
